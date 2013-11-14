@@ -1,4 +1,5 @@
 agcex_pr
 ========
 
-Android Game Controllers Example Private
+Android Game Controllers Samples for AnDevCon Presentation.
+Don't expect many updates.
