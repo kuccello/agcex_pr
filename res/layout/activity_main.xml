@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/button_joystick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="@string/btn_txt_joystick_sample"
+        android:focusable="true"
+        android:nextFocusUp="@+id/button_multi"
+        android:nextFocusDown="@+id/button_dpad"
+        android:onClick="launchJoystickActivity" />
+
+    <Button
+        android:id="@+id/button_dpad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_joystick"
+        android:layout_below="@+id/button_joystick"
+        android:text="@string/btn_txt_dpad_sample"
+        android:focusable="true"
+        android:nextFocusUp="@+id/button_joystick"
+        android:nextFocusDown="@+id/button_trigger"
+        android:onClick="launchDPadActivity" />
+
+    <Button
+        android:id="@+id/button_trigger"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_dpad"
+        android:layout_below="@+id/button_dpad"
+        android:text="@string/btn_txt_trigger_sample"
+        android:focusable="true"
+        android:nextFocusUp="@+id/button_dpad"
+        android:nextFocusDown="@+id/button_multi"
+        android:onClick="launchTriggerActivity" />
+
+    <Button
+        android:id="@+id/button_multi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_trigger"
+        android:layout_below="@+id/button_trigger"
+        android:text="@string/btn_txt_multiplayer_sample"
+        android:focusable="true"
+        android:nextFocusUp="@+id/button_trigger"
+        android:nextFocusDown="@+id/button_joystick"
+        android:onClick="launchMultiActivity" />
+
+</RelativeLayout>

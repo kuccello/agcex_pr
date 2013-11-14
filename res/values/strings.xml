@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KrispysGameControllerSamples</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_txt_joystick_sample">Joystick Sample</string>
+    <string name="btn_txt_dpad_sample">DPad Sample</string>
+    <string name="btn_txt_trigger_sample">Trigger Sample</string>
+    <string name="btn_txt_multiplayer_sample">Multi-Player Sample</string>
+    <string name="title_activity_joystick">JoystickActivity</string>
+    <string name="title_activity_dpad">DpadActivity</string>
+    <string name="title_activity_trigger">TriggerActivity</string>
+    <string name="title_activity_multi_player">MultiPlayerActivity</string>
+
+</resources>
